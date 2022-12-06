@@ -2,12 +2,29 @@
 <html>
 
 <head>
+  <script src="libs/pdf/build/pdf.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
-  <h1>Papers Written</h1>
-    <a href="/papers/honors-thesis.pdf">Honors Thesis</a>
-    <a href="/papers/csc-research-paper.pdf">CSC Thesis</a>
+  <div class="container" id="pdf">
+    <canvas id="canvas"></canvas>
+    <div .class="annotations" id="annotations">
+      <a href="papers/honors-thesis.pdf"></a>
+    </div>
+  </div>
 </body>
+
+<style>
+  .container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  a {
+    position: absolute;
+  }
+</style>
 
 </html>
